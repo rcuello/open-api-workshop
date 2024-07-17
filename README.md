@@ -25,3 +25,18 @@ The most recent iteration of OpenAPI is version 3.0. OpenAPI definitions can be 
 # Mock tools
 - [Prism](https://github.com/stoplightio/prism)
 - [Mockoon](https://mockoon.com/)
+
+# Getting started with Prism
+First install **prism** using the following in nodejs command:
+
+```bash
+npm install -g @stoplight/prism-cli
+```
+
+Use the following command to create a fake "mock" server based off an OpenAPI document:
+
+```bash
+prism mock -p 8087 https://raw.githubusercontent.com/rcuello/open-api-workshop/main/pet-sitter.yml
+```
+
+More about [how the mock server works.](https://github.com/stoplightio/prism/blob/master/docs/guides/01-mocking.md)
